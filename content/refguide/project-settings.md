@@ -46,7 +46,7 @@ Here you can select a microflow that is automatically executed when a shutdown c
 
 ### Health Check
 
-Select a microflow which reports on the health status of a running application. When this microflow returns an empty String, the application is healthy, otherwise the String represents an explanation why the application is not healthy.
+Select a microflow which reports on the health status of a running application. When this microflow returns an empty String, the application is healthy, otherwise the String represents an explanation why the application is not healthy. The health check microflow needs to generate a non-empty string four consecutive times before the status of the environment changes. When the status changes, an email alert can be received (when the box for that is ticked).
 
 ### First Day of the Week
 
